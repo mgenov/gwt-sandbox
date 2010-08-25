@@ -1,10 +1,8 @@
 package com.opengrapes.client.activity;
 
-import com.google.gwt.requestfactory.shared.RequestObject;
+import com.google.gwt.requestfactory.shared.RecordListRequest;
 import com.google.gwt.requestfactory.shared.Service;
 import com.opengrapes.server.activity.Employee;
-
-import java.util.List;
 
 /**
  * 
@@ -12,7 +10,7 @@ import java.util.List;
  */
 @Service(Employee.class)
 public interface EmployeeRequests {
-  
-  RequestObject<List<EmployeeRecord>> findAllEmployees();
+
+  RecordListRequest<EmployeeRecord> findAllEmployees();  
 
 }
